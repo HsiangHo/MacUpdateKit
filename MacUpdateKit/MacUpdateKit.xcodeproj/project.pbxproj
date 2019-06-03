@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9816ADF522A4C6D1001E66C6 /* MacUpdateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816ADF322A4C6D1001E66C6 /* MacUpdateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9816AE0522A4C90B001E66C6 /* MUKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE0322A4C90B001E66C6 /* MUKView.h */; };
+		9816AE0622A4C90B001E66C6 /* MUKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE0422A4C90B001E66C6 /* MUKView.m */; };
+		9816AE0922A4C9DB001E66C6 /* MacUpdateUIConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE0722A4C9DB001E66C6 /* MacUpdateUIConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9816AE0A22A4C9DB001E66C6 /* MacUpdateUIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE0822A4C9DB001E66C6 /* MacUpdateUIConfiguration.m */; };
+		9816AE0D22A4CA73001E66C6 /* MacUpdateAppInfoObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE0B22A4CA73001E66C6 /* MacUpdateAppInfoObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9816AE0E22A4CA73001E66C6 /* MacUpdateAppInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE0C22A4CA73001E66C6 /* MacUpdateAppInfoObject.m */; };
+		9816AE1122A4CAC3001E66C6 /* MacUpdateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE0F22A4CAC3001E66C6 /* MacUpdateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9816AE1222A4CAC3001E66C6 /* MacUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1022A4CAC3001E66C6 /* MacUpdateManager.m */; };
+		9816AE1522A4CD0A001E66C6 /* MacUpdateWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1322A4CD0A001E66C6 /* MacUpdateWindowController.h */; };
+		9816AE1622A4CD0A001E66C6 /* MacUpdateWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1422A4CD0A001E66C6 /* MacUpdateWindowController.m */; };
+		9816AE1F22A4E7D2001E66C6 /* XButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1722A4E7D2001E66C6 /* XButton.h */; };
+		9816AE2022A4E7D2001E66C6 /* NSBezierPath+XAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1822A4E7D2001E66C6 /* NSBezierPath+XAdditions.h */; };
+		9816AE2122A4E7D2001E66C6 /* XButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1922A4E7D2001E66C6 /* XButton.m */; };
+		9816AE2222A4E7D2001E66C6 /* NSColor+ColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1A22A4E7D2001E66C6 /* NSColor+ColorExtensions.m */; };
+		9816AE2322A4E7D2001E66C6 /* NSColor+ColorExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1B22A4E7D2001E66C6 /* NSColor+ColorExtensions.h */; };
+		9816AE2422A4E7D2001E66C6 /* NSBezierPath+XAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1C22A4E7D2001E66C6 /* NSBezierPath+XAdditions.m */; };
+		9816AE2522A4E7D2001E66C6 /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1D22A4E7D2001E66C6 /* XWindow.m */; };
+		9816AE2622A4E7D2001E66C6 /* XWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1E22A4E7D2001E66C6 /* XWindow.h */; };
+		9816AE2F22A4E7EE001E66C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE2E22A4E7EE001E66C6 /* AppDelegate.m */; };
+		9816AE3122A4E7F1001E66C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9816AE3022A4E7F1001E66C6 /* Assets.xcassets */; };
+		9816AE3422A4E7F1001E66C6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9816AE3222A4E7F1001E66C6 /* MainMenu.xib */; };
+		9816AE3722A4E7F1001E66C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE3622A4E7F1001E66C6 /* main.m */; };
+		9816AE3D22A4F261001E66C6 /* MacUpdateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9816ADF022A4C6D1001E66C6 /* MacUpdateKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9816ADF022A4C6D1001E66C6 /* MacUpdateKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MacUpdateKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9816ADF322A4C6D1001E66C6 /* MacUpdateKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacUpdateKit.h; sourceTree = "<group>"; };
+		9816ADF422A4C6D1001E66C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9816AE0322A4C90B001E66C6 /* MUKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUKView.h; sourceTree = "<group>"; };
+		9816AE0422A4C90B001E66C6 /* MUKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUKView.m; sourceTree = "<group>"; };
+		9816AE0722A4C9DB001E66C6 /* MacUpdateUIConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacUpdateUIConfiguration.h; sourceTree = "<group>"; };
+		9816AE0822A4C9DB001E66C6 /* MacUpdateUIConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacUpdateUIConfiguration.m; sourceTree = "<group>"; };
+		9816AE0B22A4CA73001E66C6 /* MacUpdateAppInfoObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacUpdateAppInfoObject.h; sourceTree = "<group>"; };
+		9816AE0C22A4CA73001E66C6 /* MacUpdateAppInfoObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacUpdateAppInfoObject.m; sourceTree = "<group>"; };
+		9816AE0F22A4CAC3001E66C6 /* MacUpdateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacUpdateManager.h; sourceTree = "<group>"; };
+		9816AE1022A4CAC3001E66C6 /* MacUpdateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacUpdateManager.m; sourceTree = "<group>"; };
+		9816AE1322A4CD0A001E66C6 /* MacUpdateWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacUpdateWindowController.h; sourceTree = "<group>"; };
+		9816AE1422A4CD0A001E66C6 /* MacUpdateWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacUpdateWindowController.m; sourceTree = "<group>"; };
+		9816AE1722A4E7D2001E66C6 /* XButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XButton.h; sourceTree = "<group>"; };
+		9816AE1822A4E7D2001E66C6 /* NSBezierPath+XAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+XAdditions.h"; sourceTree = "<group>"; };
+		9816AE1922A4E7D2001E66C6 /* XButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XButton.m; sourceTree = "<group>"; };
+		9816AE1A22A4E7D2001E66C6 /* NSColor+ColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+ColorExtensions.m"; sourceTree = "<group>"; };
+		9816AE1B22A4E7D2001E66C6 /* NSColor+ColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+ColorExtensions.h"; sourceTree = "<group>"; };
+		9816AE1C22A4E7D2001E66C6 /* NSBezierPath+XAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+XAdditions.m"; sourceTree = "<group>"; };
+		9816AE1D22A4E7D2001E66C6 /* XWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWindow.m; sourceTree = "<group>"; };
+		9816AE1E22A4E7D2001E66C6 /* XWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWindow.h; sourceTree = "<group>"; };
+		9816AE2B22A4E7EE001E66C6 /* MacUpdateKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacUpdateKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9816AE2D22A4E7EE001E66C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9816AE2E22A4E7EE001E66C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9816AE3022A4E7F1001E66C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9816AE3322A4E7F1001E66C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9816AE3522A4E7F1001E66C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9816AE3622A4E7F1001E66C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9816AE3822A4E7F1001E66C6 /* MacUpdateKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacUpdateKitDemo.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9816ADED22A4C6D1001E66C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9816AE2822A4E7EE001E66C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9816AE3D22A4F261001E66C6 /* MacUpdateKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9816ADE622A4C6D1001E66C6 = {
+			isa = PBXGroup;
+			children = (
+				9816ADF222A4C6D1001E66C6 /* MacUpdateKit */,
+				9816AE2C22A4E7EE001E66C6 /* MacUpdateKitDemo */,
+				9816ADF122A4C6D1001E66C6 /* Products */,
+				9816AE3C22A4F261001E66C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9816ADF122A4C6D1001E66C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9816ADF022A4C6D1001E66C6 /* MacUpdateKit.framework */,
+				9816AE2B22A4E7EE001E66C6 /* MacUpdateKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9816ADF222A4C6D1001E66C6 /* MacUpdateKit */ = {
+			isa = PBXGroup;
+			children = (
+				9816ADFE22A4C723001E66C6 /* UI */,
+				9816ADF322A4C6D1001E66C6 /* MacUpdateKit.h */,
+				9816AE0722A4C9DB001E66C6 /* MacUpdateUIConfiguration.h */,
+				9816AE0822A4C9DB001E66C6 /* MacUpdateUIConfiguration.m */,
+				9816AE0B22A4CA73001E66C6 /* MacUpdateAppInfoObject.h */,
+				9816AE0C22A4CA73001E66C6 /* MacUpdateAppInfoObject.m */,
+				9816AE0F22A4CAC3001E66C6 /* MacUpdateManager.h */,
+				9816AE1022A4CAC3001E66C6 /* MacUpdateManager.m */,
+				9816AE1322A4CD0A001E66C6 /* MacUpdateWindowController.h */,
+				9816AE1422A4CD0A001E66C6 /* MacUpdateWindowController.m */,
+				9816ADF422A4C6D1001E66C6 /* Info.plist */,
+			);
+			path = MacUpdateKit;
+			sourceTree = "<group>";
+		};
+		9816ADFE22A4C723001E66C6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9816AE1822A4E7D2001E66C6 /* NSBezierPath+XAdditions.h */,
+				9816AE1C22A4E7D2001E66C6 /* NSBezierPath+XAdditions.m */,
+				9816AE1B22A4E7D2001E66C6 /* NSColor+ColorExtensions.h */,
+				9816AE1A22A4E7D2001E66C6 /* NSColor+ColorExtensions.m */,
+				9816AE1722A4E7D2001E66C6 /* XButton.h */,
+				9816AE1922A4E7D2001E66C6 /* XButton.m */,
+				9816AE1E22A4E7D2001E66C6 /* XWindow.h */,
+				9816AE1D22A4E7D2001E66C6 /* XWindow.m */,
+				9816AE0322A4C90B001E66C6 /* MUKView.h */,
+				9816AE0422A4C90B001E66C6 /* MUKView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9816AE2C22A4E7EE001E66C6 /* MacUpdateKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9816AE2D22A4E7EE001E66C6 /* AppDelegate.h */,
+				9816AE2E22A4E7EE001E66C6 /* AppDelegate.m */,
+				9816AE3022A4E7F1001E66C6 /* Assets.xcassets */,
+				9816AE3222A4E7F1001E66C6 /* MainMenu.xib */,
+				9816AE3522A4E7F1001E66C6 /* Info.plist */,
+				9816AE3622A4E7F1001E66C6 /* main.m */,
+				9816AE3822A4E7F1001E66C6 /* MacUpdateKitDemo.entitlements */,
+			);
+			path = MacUpdateKitDemo;
+			sourceTree = "<group>";
+		};
+		9816AE3C22A4F261001E66C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9816ADEB22A4C6D1001E66C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9816AE2022A4E7D2001E66C6 /* NSBezierPath+XAdditions.h in Headers */,
+				9816AE0D22A4CA73001E66C6 /* MacUpdateAppInfoObject.h in Headers */,
+				9816AE1122A4CAC3001E66C6 /* MacUpdateManager.h in Headers */,
+				9816AE0922A4C9DB001E66C6 /* MacUpdateUIConfiguration.h in Headers */,
+				9816AE1522A4CD0A001E66C6 /* MacUpdateWindowController.h in Headers */,
+				9816AE2322A4E7D2001E66C6 /* NSColor+ColorExtensions.h in Headers */,
+				9816AE0522A4C90B001E66C6 /* MUKView.h in Headers */,
+				9816AE1F22A4E7D2001E66C6 /* XButton.h in Headers */,
+				9816ADF522A4C6D1001E66C6 /* MacUpdateKit.h in Headers */,
+				9816AE2622A4E7D2001E66C6 /* XWindow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9816ADEF22A4C6D1001E66C6 /* MacUpdateKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9816ADF822A4C6D1001E66C6 /* Build configuration list for PBXNativeTarget "MacUpdateKit" */;
+			buildPhases = (
+				9816ADEB22A4C6D1001E66C6 /* Headers */,
+				9816ADEC22A4C6D1001E66C6 /* Sources */,
+				9816ADED22A4C6D1001E66C6 /* Frameworks */,
+				9816ADEE22A4C6D1001E66C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacUpdateKit;
+			productName = MacUpdateKit;
+			productReference = 9816ADF022A4C6D1001E66C6 /* MacUpdateKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9816AE2A22A4E7EE001E66C6 /* MacUpdateKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9816AE3922A4E7F1001E66C6 /* Build configuration list for PBXNativeTarget "MacUpdateKitDemo" */;
+			buildPhases = (
+				9816AE2722A4E7EE001E66C6 /* Sources */,
+				9816AE2822A4E7EE001E66C6 /* Frameworks */,
+				9816AE2922A4E7EE001E66C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacUpdateKitDemo;
+			productName = MacUpdateKitDemo;
+			productReference = 9816AE2B22A4E7EE001E66C6 /* MacUpdateKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9816ADE722A4C6D1001E66C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Jovi;
+				TargetAttributes = {
+					9816ADEF22A4C6D1001E66C6 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					9816AE2A22A4E7EE001E66C6 = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9816ADEA22A4C6D1001E66C6 /* Build configuration list for PBXProject "MacUpdateKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9816ADE622A4C6D1001E66C6;
+			productRefGroup = 9816ADF122A4C6D1001E66C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9816ADEF22A4C6D1001E66C6 /* MacUpdateKit */,
+				9816AE2A22A4E7EE001E66C6 /* MacUpdateKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9816ADEE22A4C6D1001E66C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9816AE2922A4E7EE001E66C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9816AE3122A4E7F1001E66C6 /* Assets.xcassets in Resources */,
+				9816AE3422A4E7F1001E66C6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9816ADEC22A4C6D1001E66C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9816AE0622A4C90B001E66C6 /* MUKView.m in Sources */,
+				9816AE0A22A4C9DB001E66C6 /* MacUpdateUIConfiguration.m in Sources */,
+				9816AE2122A4E7D2001E66C6 /* XButton.m in Sources */,
+				9816AE0E22A4CA73001E66C6 /* MacUpdateAppInfoObject.m in Sources */,
+				9816AE1622A4CD0A001E66C6 /* MacUpdateWindowController.m in Sources */,
+				9816AE2422A4E7D2001E66C6 /* NSBezierPath+XAdditions.m in Sources */,
+				9816AE2222A4E7D2001E66C6 /* NSColor+ColorExtensions.m in Sources */,
+				9816AE2522A4E7D2001E66C6 /* XWindow.m in Sources */,
+				9816AE1222A4CAC3001E66C6 /* MacUpdateManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9816AE2722A4E7EE001E66C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9816AE3722A4E7F1001E66C6 /* main.m in Sources */,
+				9816AE2F22A4E7EE001E66C6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9816AE3222A4E7F1001E66C6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9816AE3322A4E7F1001E66C6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9816ADF622A4C6D1001E66C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9816ADF722A4C6D1001E66C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9816ADF922A4C6D1001E66C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9P895LY647;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MacUpdateKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.MacUpdateKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9816ADFA22A4C6D1001E66C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9P895LY647;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MacUpdateKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.MacUpdateKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9816AE3A22A4E7F1001E66C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
+				DEVELOPMENT_TEAM = 9P895LY647;
+				INFOPLIST_FILE = MacUpdateKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.MacUpdateKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9816AE3B22A4E7F1001E66C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
+				DEVELOPMENT_TEAM = 9P895LY647;
+				INFOPLIST_FILE = MacUpdateKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.MacUpdateKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9816ADEA22A4C6D1001E66C6 /* Build configuration list for PBXProject "MacUpdateKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9816ADF622A4C6D1001E66C6 /* Debug */,
+				9816ADF722A4C6D1001E66C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9816ADF822A4C6D1001E66C6 /* Build configuration list for PBXNativeTarget "MacUpdateKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9816ADF922A4C6D1001E66C6 /* Debug */,
+				9816ADFA22A4C6D1001E66C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9816AE3922A4E7F1001E66C6 /* Build configuration list for PBXNativeTarget "MacUpdateKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9816AE3A22A4E7F1001E66C6 /* Debug */,
+				9816AE3B22A4E7F1001E66C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9816ADE722A4C6D1001E66C6 /* Project object */;
+}
