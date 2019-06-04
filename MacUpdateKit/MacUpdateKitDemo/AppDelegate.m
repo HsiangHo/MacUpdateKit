@@ -29,28 +29,39 @@
     
     BOOL bRslt = [[MacUpdateManager sharedManager] checkAppUpdate:appObj];
     bRslt = [appObj isNewVersionAvailable];
-    
     [[MacUpdateManager sharedManager] checkAppUpdateAsync:appObj withCompletionBlock:^(BOOL rslt, MacUpdateAppInfoObject * _Nonnull AppObj) {
         if (rslt && [appObj isNewVersionAvailable] && ![[MacUpdateManager sharedManager] isCurrentNewVersionSkipped:appObj]) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [[MacUpdateManager sharedManager] requestAppUpdateWindow:appObj withCompletionCallback:^(AppUpdateWindowResult rslt, MacUpdateAppInfoObject * _Nonnull AppObj) {
-                    switch (rslt) {
-                        case AppUpdateWindowResultUpdate:
-                            [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString: [appObj downloadURL]]];
-                            break;
-                            
-                        case AppUpdateWindowResultSkip:
-                            [[MacUpdateManager sharedManager] skipCurrentNewVersion:AppObj];
-                            break;
-                            
-                        case AppUpdateWindowResultLater:
-                            break;
-                            
-                        default:
-                            break;
-                    }
-                }];
-            });
+            if(![appObj forceUpdateFlag]){
+                // force install updates
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [[MacUpdateManager sharedManager] downloadUpdatesInBackground:appObj withCachePath:@"/tmp" withDownloadCompleteBlock:^(BOOL rslt, NSString * _Nonnull installerPath, MacUpdateAppInfoObject * _Nonnull AppObj) {
+                        if (rslt) {
+                            [[MacUpdateManager sharedManager] installUpdatesInBackground:installerPath];
+                        }
+                    }];
+                });
+            }else{
+                //prompt alert window
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [[MacUpdateManager sharedManager] requestAppUpdateWindow:appObj withCompletionCallback:^(AppUpdateWindowResult rslt, MacUpdateAppInfoObject * _Nonnull AppObj) {
+                        switch (rslt) {
+                            case AppUpdateWindowResultUpdate:
+                                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString: [appObj downloadURL]]];
+                                break;
+                                
+                            case AppUpdateWindowResultSkip:
+                                [[MacUpdateManager sharedManager] skipCurrentNewVersion:AppObj];
+                                break;
+                                
+                            case AppUpdateWindowResultLater:
+                                break;
+                                
+                            default:
+                                break;
+                        }
+                    }];
+                });
+            }
         }
     }];
 }
