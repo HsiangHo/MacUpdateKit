@@ -7,7 +7,7 @@ if (empty($pid)){
     exit(0);
 }
 
-$test_info = new appInfoObject(constant("test-product-id"), "1.1" ,"bug fixed.\nnew feature.", "https://github.com/hsiangho", 0);
+$test_info = new appInfoObject(constant("test-product-id"), "1.1" ,"bug fixed.\nnew feature.", "https://xxxxx.com/download/test.pkg", 0);
 
 switch ($pid){
     case constant("test-product-id"):
