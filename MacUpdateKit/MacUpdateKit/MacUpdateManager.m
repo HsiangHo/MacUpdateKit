@@ -136,6 +136,16 @@ static MacUpdateManager *instance;
     _theDownload = [[NSURLDownload alloc] initWithRequest:theRequest delegate:self];
 }
 
+-(void)installUpdatesInBackground:(NSString *)installerPath{
+    if ([installerPath hasSuffix:@"pkg"]) {
+        //pkg files
+        NSString *shell = [NSString stringWithFormat:@"sudo installer -pkg '%@' -target / &", installerPath];
+        NSDictionary* errorDict;
+        NSAppleScript* scriptObject = [[NSAppleScript alloc] initWithSource:[NSString stringWithFormat:@"do shell script \"%@\" with administrator privileges", shell]];
+        [scriptObject executeAndReturnError: &errorDict];
+    }
+}
+
 #pragma mark - delegate
 -(void)skipButtonClick:(MacUpdateWindowController *)sender{
     if(NULL != _requestAppUpdateWindowCompletionBlock){

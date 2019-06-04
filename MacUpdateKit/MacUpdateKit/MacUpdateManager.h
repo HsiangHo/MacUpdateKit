@@ -45,9 +45,14 @@ NS_ASSUME_NONNULL_BEGIN
 -(BOOL)isCurrentNewVersionSkipped:(MacUpdateAppInfoObject *)appObj;
 
 /*
- Install updates in the background
+ Download updates in the background
  */
 -(void)downloadUpdatesInBackground:(MacUpdateAppInfoObject *)appObj withCachePath:(NSString *)cachPath withDownloadCompleteBlock:(void (^)(BOOL rslt,  NSString *installerPath, MacUpdateAppInfoObject *AppObj))downloadCompleteBlock;
+
+/*
+ Install updates in the background
+ */
+-(void)installUpdatesInBackground:(NSString *)installerPath;
 
 @end
 
