@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class MacUpdateUIConfiguration;
 @class MacUpdateAppInfoObject;
-@interface MacUpdateManager : NSObject
+@interface MacUpdateManager : NSObject <NSURLDownloadDelegate>
 
 +(instancetype)sharedManager;
 
@@ -43,6 +43,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(void)skipCurrentNewVersion:(MacUpdateAppInfoObject *)appObj;
 -(BOOL)isCurrentNewVersionSkipped:(MacUpdateAppInfoObject *)appObj;
+
+/*
+ Install updates in the background
+ */
+-(void)downloadUpdatesInBackground:(MacUpdateAppInfoObject *)appObj withCachePath:(NSString *)cachPath withDownloadCompleteBlock:(void (^)(BOOL rslt,  NSString *installerPath, MacUpdateAppInfoObject *AppObj))downloadCompleteBlock;
 
 @end
 

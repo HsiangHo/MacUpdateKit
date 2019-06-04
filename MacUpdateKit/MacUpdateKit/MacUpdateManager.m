@@ -14,8 +14,15 @@ static MacUpdateManager *instance;
 @implementation MacUpdateManager{
     void (^_checkUpdateCompletionBlock)(BOOL rslt, MacUpdateAppInfoObject *AppObj);
     void (^_requestAppUpdateWindowCompletionBlock)(AppUpdateWindowResult rslt, MacUpdateAppInfoObject *AppObj);
+    void (^_downloadCompleteBlock)(BOOL rslt,  NSString *installerPath, MacUpdateAppInfoObject *AppObj);
     MacUpdateUIConfiguration        *_configure;
+    MacUpdateAppInfoObject          *_appObj;
     NSString                        *_check4UpdateURL;
+    NSString                        *_downloadedFilePath;
+    NSString                        *_cachPath;
+    NSURLResponse                   *_downloadResponse;
+    NSURLDownload                   *_theDownload;
+    BOOL                            _bDownloaded;
 }
 
 +(instancetype)sharedManager{
@@ -114,6 +121,21 @@ static MacUpdateManager *instance;
     return bRslt;
 }
 
+-(void)downloadUpdatesInBackground:(MacUpdateAppInfoObject *)appObj withCachePath:(NSString *)cachPath withDownloadCompleteBlock:(void (^)(BOOL rslt,  NSString *installerPath, MacUpdateAppInfoObject *AppObj))downloadCompleteBlock;{
+    if (![appObj isNewVersionAvailable] || nil == [appObj downloadURL] || [[appObj downloadURL] isEqualToString:@""]) {
+        return;
+    }
+    _cachPath = cachPath;
+    if (nil == _cachPath || [_cachPath isEqualToString:@""]) {
+        _cachPath = @"/tmp";
+    }
+    _appObj = appObj;
+    _downloadCompleteBlock = downloadCompleteBlock;
+    NSURL *URL = [NSURL URLWithString:[appObj downloadURL]];
+    NSURLRequest *theRequest = [NSURLRequest requestWithURL:URL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6000.0];
+    _theDownload = [[NSURLDownload alloc] initWithRequest:theRequest delegate:self];
+}
+
 #pragma mark - delegate
 -(void)skipButtonClick:(MacUpdateWindowController *)sender{
     if(NULL != _requestAppUpdateWindowCompletionBlock){
@@ -133,5 +155,39 @@ static MacUpdateManager *instance;
     }
 }
 
+- (void)download:(NSURLDownload *)download decideDestinationWithSuggestedFilename:(NSString *)filename{
+    if (_theDownload == download) {
+        _downloadedFilePath = [NSString stringWithFormat:@"%@/%@", _cachPath, filename];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:_downloadedFilePath]) {
+            [[NSFileManager defaultManager] removeItemAtPath:_downloadedFilePath error:nil];
+        }
+        _bDownloaded = NO;
+        [download setDestination:_downloadedFilePath allowOverwrite:NO];
+    }
+}
+
+- (void)downloadDidFinish:(NSURLDownload *)download{
+    if (_theDownload == download) {
+        _bDownloaded = YES;
+        if (NULL != _downloadCompleteBlock) {
+            _downloadCompleteBlock(_bDownloaded, _downloadedFilePath, _appObj);
+        }
+    }
+}
+
+- (void)download:(NSURLDownload *)download didFailWithError:(NSError *)error{
+    if (_theDownload == download) {
+        _bDownloaded = NO;
+        if (NULL != _downloadCompleteBlock) {
+            _downloadCompleteBlock(_bDownloaded, _downloadedFilePath, _appObj);
+        }
+    }
+}
+
+- (void)download:(NSURLDownload *)download didReceiveResponse:(NSURLResponse *)response{
+    if (_theDownload == download) {
+        _downloadResponse = response;
+    }
+}
 
 @end
