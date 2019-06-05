@@ -18,19 +18,19 @@
 		9816AE1222A4CAC3001E66C6 /* MacUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1022A4CAC3001E66C6 /* MacUpdateManager.m */; };
 		9816AE1522A4CD0A001E66C6 /* MacUpdateWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1322A4CD0A001E66C6 /* MacUpdateWindowController.h */; };
 		9816AE1622A4CD0A001E66C6 /* MacUpdateWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1422A4CD0A001E66C6 /* MacUpdateWindowController.m */; };
-		9816AE1F22A4E7D2001E66C6 /* XButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1722A4E7D2001E66C6 /* XButton.h */; };
 		9816AE2022A4E7D2001E66C6 /* NSBezierPath+XAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1822A4E7D2001E66C6 /* NSBezierPath+XAdditions.h */; };
-		9816AE2122A4E7D2001E66C6 /* XButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1922A4E7D2001E66C6 /* XButton.m */; };
 		9816AE2222A4E7D2001E66C6 /* NSColor+ColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1A22A4E7D2001E66C6 /* NSColor+ColorExtensions.m */; };
 		9816AE2322A4E7D2001E66C6 /* NSColor+ColorExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1B22A4E7D2001E66C6 /* NSColor+ColorExtensions.h */; };
 		9816AE2422A4E7D2001E66C6 /* NSBezierPath+XAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1C22A4E7D2001E66C6 /* NSBezierPath+XAdditions.m */; };
-		9816AE2522A4E7D2001E66C6 /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE1D22A4E7D2001E66C6 /* XWindow.m */; };
-		9816AE2622A4E7D2001E66C6 /* XWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816AE1E22A4E7D2001E66C6 /* XWindow.h */; };
 		9816AE2F22A4E7EE001E66C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE2E22A4E7EE001E66C6 /* AppDelegate.m */; };
 		9816AE3122A4E7F1001E66C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9816AE3022A4E7F1001E66C6 /* Assets.xcassets */; };
 		9816AE3422A4E7F1001E66C6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9816AE3222A4E7F1001E66C6 /* MainMenu.xib */; };
 		9816AE3722A4E7F1001E66C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816AE3622A4E7F1001E66C6 /* main.m */; };
 		9816AE3D22A4F261001E66C6 /* MacUpdateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9816ADF022A4C6D1001E66C6 /* MacUpdateKit.framework */; };
+		98416CF422A801CD00DEEFC8 /* MUKWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 98416CF022A801CD00DEEFC8 /* MUKWindow.h */; };
+		98416CF522A801CD00DEEFC8 /* MUKButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 98416CF122A801CD00DEEFC8 /* MUKButton.h */; };
+		98416CF622A801CD00DEEFC8 /* MUKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 98416CF222A801CD00DEEFC8 /* MUKWindow.m */; };
+		98416CF722A801CD00DEEFC8 /* MUKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98416CF322A801CD00DEEFC8 /* MUKButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,14 +47,10 @@
 		9816AE1022A4CAC3001E66C6 /* MacUpdateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacUpdateManager.m; sourceTree = "<group>"; };
 		9816AE1322A4CD0A001E66C6 /* MacUpdateWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacUpdateWindowController.h; sourceTree = "<group>"; };
 		9816AE1422A4CD0A001E66C6 /* MacUpdateWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacUpdateWindowController.m; sourceTree = "<group>"; };
-		9816AE1722A4E7D2001E66C6 /* XButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XButton.h; sourceTree = "<group>"; };
 		9816AE1822A4E7D2001E66C6 /* NSBezierPath+XAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+XAdditions.h"; sourceTree = "<group>"; };
-		9816AE1922A4E7D2001E66C6 /* XButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XButton.m; sourceTree = "<group>"; };
 		9816AE1A22A4E7D2001E66C6 /* NSColor+ColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+ColorExtensions.m"; sourceTree = "<group>"; };
 		9816AE1B22A4E7D2001E66C6 /* NSColor+ColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+ColorExtensions.h"; sourceTree = "<group>"; };
 		9816AE1C22A4E7D2001E66C6 /* NSBezierPath+XAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+XAdditions.m"; sourceTree = "<group>"; };
-		9816AE1D22A4E7D2001E66C6 /* XWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWindow.m; sourceTree = "<group>"; };
-		9816AE1E22A4E7D2001E66C6 /* XWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWindow.h; sourceTree = "<group>"; };
 		9816AE2B22A4E7EE001E66C6 /* MacUpdateKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacUpdateKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9816AE2D22A4E7EE001E66C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9816AE2E22A4E7EE001E66C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +59,10 @@
 		9816AE3522A4E7F1001E66C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9816AE3622A4E7F1001E66C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9816AE3822A4E7F1001E66C6 /* MacUpdateKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacUpdateKitDemo.entitlements; sourceTree = "<group>"; };
+		98416CF022A801CD00DEEFC8 /* MUKWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUKWindow.h; sourceTree = "<group>"; };
+		98416CF122A801CD00DEEFC8 /* MUKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUKButton.h; sourceTree = "<group>"; };
+		98416CF222A801CD00DEEFC8 /* MUKWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUKWindow.m; sourceTree = "<group>"; };
+		98416CF322A801CD00DEEFC8 /* MUKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUKButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,14 +124,14 @@
 		9816ADFE22A4C723001E66C6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				98416CF122A801CD00DEEFC8 /* MUKButton.h */,
+				98416CF322A801CD00DEEFC8 /* MUKButton.m */,
+				98416CF022A801CD00DEEFC8 /* MUKWindow.h */,
+				98416CF222A801CD00DEEFC8 /* MUKWindow.m */,
 				9816AE1822A4E7D2001E66C6 /* NSBezierPath+XAdditions.h */,
 				9816AE1C22A4E7D2001E66C6 /* NSBezierPath+XAdditions.m */,
 				9816AE1B22A4E7D2001E66C6 /* NSColor+ColorExtensions.h */,
 				9816AE1A22A4E7D2001E66C6 /* NSColor+ColorExtensions.m */,
-				9816AE1722A4E7D2001E66C6 /* XButton.h */,
-				9816AE1922A4E7D2001E66C6 /* XButton.m */,
-				9816AE1E22A4E7D2001E66C6 /* XWindow.h */,
-				9816AE1D22A4E7D2001E66C6 /* XWindow.m */,
 				9816AE0322A4C90B001E66C6 /* MUKView.h */,
 				9816AE0422A4C90B001E66C6 /* MUKView.m */,
 			);
@@ -166,16 +166,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98416CF522A801CD00DEEFC8 /* MUKButton.h in Headers */,
 				9816AE2022A4E7D2001E66C6 /* NSBezierPath+XAdditions.h in Headers */,
 				9816AE0D22A4CA73001E66C6 /* MacUpdateAppInfoObject.h in Headers */,
 				9816AE1122A4CAC3001E66C6 /* MacUpdateManager.h in Headers */,
 				9816AE0922A4C9DB001E66C6 /* MacUpdateUIConfiguration.h in Headers */,
 				9816AE1522A4CD0A001E66C6 /* MacUpdateWindowController.h in Headers */,
 				9816AE2322A4E7D2001E66C6 /* NSColor+ColorExtensions.h in Headers */,
+				98416CF422A801CD00DEEFC8 /* MUKWindow.h in Headers */,
 				9816AE0522A4C90B001E66C6 /* MUKView.h in Headers */,
-				9816AE1F22A4E7D2001E66C6 /* XButton.h in Headers */,
 				9816ADF522A4C6D1001E66C6 /* MacUpdateKit.h in Headers */,
-				9816AE2622A4E7D2001E66C6 /* XWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +284,12 @@
 			files = (
 				9816AE0622A4C90B001E66C6 /* MUKView.m in Sources */,
 				9816AE0A22A4C9DB001E66C6 /* MacUpdateUIConfiguration.m in Sources */,
-				9816AE2122A4E7D2001E66C6 /* XButton.m in Sources */,
+				98416CF722A801CD00DEEFC8 /* MUKButton.m in Sources */,
 				9816AE0E22A4CA73001E66C6 /* MacUpdateAppInfoObject.m in Sources */,
+				98416CF622A801CD00DEEFC8 /* MUKWindow.m in Sources */,
 				9816AE1622A4CD0A001E66C6 /* MacUpdateWindowController.m in Sources */,
 				9816AE2422A4E7D2001E66C6 /* NSBezierPath+XAdditions.m in Sources */,
 				9816AE2222A4E7D2001E66C6 /* NSColor+ColorExtensions.m in Sources */,
-				9816AE2522A4E7D2001E66C6 /* XWindow.m in Sources */,
 				9816AE1222A4CAC3001E66C6 /* MacUpdateManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

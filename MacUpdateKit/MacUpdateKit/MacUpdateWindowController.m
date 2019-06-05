@@ -10,8 +10,8 @@
 #import "MacUpdateAppInfoObject.h"
 #import "MacUpdateUIConfiguration.h"
 #import "NSColor+ColorExtensions.h"
-#import "XButton.h"
-#import "XWindow.h"
+#import "MUKButton.h"
+#import "MUKWindow.h"
 #import "MUKView.h"
 
 @interface MacUpdateWindowController ()
@@ -26,9 +26,9 @@
     NSTextField                                            *_lbReleaseNotes;
     NSScrollView                                           *_svReleaseNotes;
     NSTextView                                             *_tvReleaseNotes;
-    XButton                                                *_btnSkip;
-    XButton                                                *_btnLater;
-    XButton                                                *_btnUpdate;
+    MUKButton                                              *_btnSkip;
+    MUKButton                                              *_btnLater;
+    MUKButton                                              *_btnUpdate;
     __weak id<MacUpdateWindowControllerDelegate>           _delegate;
     NSString                                               *_releaseNotesNoneText;
     NSString                                               *_releaseNotesText;
@@ -44,7 +44,7 @@
 
 -(void)__initializeAppStoreUpdateWindowController:(MacUpdateUIConfiguration *)configure {
     NSRect rctWindow = NSMakeRect(0, 0, 320, 485);
-    XWindow *window = [[XWindow alloc] initWithContentRect:NSMakeRect(0, 0, 320, 462) styleMask:NSWindowStyleMaskTitled backing:NSBackingStoreBuffered defer:YES];
+    MUKWindow *window = [[MUKWindow alloc] initWithContentRect:NSMakeRect(0, 0, 320, 462) styleMask:NSWindowStyleMaskTitled backing:NSBackingStoreBuffered defer:YES];
     [self setWindow:window];
     [window setLevel:NSFloatingWindowLevel];
     [window setMovableByWindowBackground:YES];
@@ -78,6 +78,7 @@
     [_lbVersion setWantsLayer:YES];
     _lbVersion.layer.backgroundColor = [NSColor colorWithCalibratedRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1.0].CGColor;
     _lbVersion.layer.cornerRadius = 10.0f;
+    [_lbVersion setDrawsBackground:NO];
     [_lbVersion setEditable:NO];
     [_lbVersion setBezeled:NO];
     [_lbVersion setSelectable:NO];
@@ -114,7 +115,7 @@
     [_tvReleaseNotes setSelectable:NO];
     [_svReleaseNotes setDocumentView:_tvReleaseNotes];
     
-    _btnUpdate =  [[XButton alloc] initWithFrame:NSMakeRect((NSWidth(rctWindow) - 250) / 2, NSMinY(_svReleaseNotes.frame) - 55, 250, 45)];
+    _btnUpdate =  [[MUKButton alloc] initWithFrame:NSMakeRect((NSWidth(rctWindow) - 250) / 2, NSMinY(_svReleaseNotes.frame) - 55, 250, 45)];
     [_btnUpdate setTitle:@"Update"];
     [_btnUpdate setAlignment:NSCenterTextAlignment];
     [_btnUpdate.layer setCornerRadius:4.0];
@@ -129,7 +130,7 @@
     [_btnUpdate setAction:@selector(updateButton_click:)];
     [window.contentView addSubview:_btnUpdate];
     
-    _btnSkip = [[XButton alloc] initWithFrame:NSMakeRect(NSMinX(_btnUpdate.frame), NSMinY(_btnUpdate.frame) - 30, 120, 20)];
+    _btnSkip = [[MUKButton alloc] initWithFrame:NSMakeRect(NSMinX(_btnUpdate.frame), NSMinY(_btnUpdate.frame) - 30, 120, 20)];
     [_btnSkip setTitle:@"Skip this version"];
     [_btnSkip setAlignment:NSLeftTextAlignment];
     [_btnSkip.layer setBackgroundColor:[NSColor clearColor].CGColor];
@@ -142,7 +143,7 @@
     [_btnSkip setAction:@selector(skipButton_click:)];
     [window.contentView addSubview:_btnSkip];
     
-    _btnLater = [[XButton alloc] initWithFrame:NSMakeRect(NSMaxX(_btnUpdate.frame) - 80, NSMinY(_btnUpdate.frame) - 30, 80, 20)];
+    _btnLater = [[MUKButton alloc] initWithFrame:NSMakeRect(NSMaxX(_btnUpdate.frame) - 80, NSMinY(_btnUpdate.frame) - 30, 80, 20)];
     [_btnLater setTitle:@"Later"];
     [_btnLater setAlignment:NSRightTextAlignment];
     [_btnLater.layer setBackgroundColor:[NSColor clearColor].CGColor];

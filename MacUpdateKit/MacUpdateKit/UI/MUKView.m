@@ -11,7 +11,10 @@
 @implementation MUKView
 
 - (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
+//    [super drawRect:dirtyRect];
+    [[NSColor whiteColor] setFill];
+    NSRectFill(dirtyRect);
+    
     //// General Declarations
     CGContextRef context = NSGraphicsContext.currentContext.graphicsPort;
     

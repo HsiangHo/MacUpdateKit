@@ -31,7 +31,7 @@
     bRslt = [appObj isNewVersionAvailable];
     [[MacUpdateManager sharedManager] checkAppUpdateAsync:appObj withCompletionBlock:^(BOOL rslt, MacUpdateAppInfoObject * _Nonnull AppObj) {
         if (rslt && [appObj isNewVersionAvailable] && ![[MacUpdateManager sharedManager] isCurrentNewVersionSkipped:appObj]) {
-            if(![appObj forceUpdateFlag]){
+            if([appObj forceUpdateFlag]){
                 // force install updates
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [[MacUpdateManager sharedManager] downloadUpdatesInBackground:appObj withCachePath:@"/tmp" withDownloadCompleteBlock:^(BOOL rslt, NSString * _Nonnull installerPath, MacUpdateAppInfoObject * _Nonnull AppObj) {
