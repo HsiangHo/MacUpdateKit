@@ -44,7 +44,7 @@
 
 -(void)__initializeAppStoreUpdateWindowController:(MacUpdateUIConfiguration *)configure {
     NSRect rctWindow = NSMakeRect(0, 0, 320, 485);
-    MUKWindow *window = [[MUKWindow alloc] initWithContentRect:NSMakeRect(0, 0, 320, 462) styleMask:NSWindowStyleMaskTitled backing:NSBackingStoreBuffered defer:YES];
+    MUKWindow *window = [[MUKWindow alloc] initWithContentRect:NSMakeRect(0, 0, 320, 462) styleMask:NSWindowStyleMaskTitled | NSWindowStyleMaskTexturedBackground backing:NSBackingStoreBuffered defer:YES];
     [self setWindow:window];
     [window setLevel:NSFloatingWindowLevel];
     [window setMovableByWindowBackground:YES];
