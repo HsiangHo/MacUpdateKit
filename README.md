@@ -7,7 +7,7 @@
 
 MacUpdateKit is an lightweight software update framework for cocoa developers.
 
-![screenshot](https://github.com/HsiangHo/MacUpdateKit/blob/master/docs/ScreenShot.png "screenshot")
+<img src="docs/ScreenShot.png" width="380px">
   
 ## Features
 
