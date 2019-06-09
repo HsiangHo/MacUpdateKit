@@ -5,6 +5,7 @@
 [![Server](https://img.shields.io/badge/server-php-green.svg)](https://github.com/HsiangHo/MacUpdateKit/tree/master/MacUpdateServer)
 [![Language](https://img.shields.io/badge/language-Objective--C-yellowgreen.svg)](https://github.com/HsiangHo/MacUpdateKit/tree/master/MacUpdateServer)
 
+[See The Kit for Mac App Store Version](https://github.com/HsiangHo/AppStoreUpdateKit)  
 MacUpdateKit is an lightweight software update framework for cocoa developers.
 
 <img src="docs/ScreenShot.png" width="380px">
