@@ -20,11 +20,11 @@
     // Insert code here to initialize your application
     MacUpdateAppInfoObject *appObj = [[MacUpdateAppInfoObject alloc] initWithAppName:@"TEST" withAppIcon:[NSImage imageNamed:@"NSComputer"] withCurrentVersion:@"1.0" withProductID:@"100"];
     MacUpdateUIConfiguration *UIConfigure = [[MacUpdateUIConfiguration alloc] init];
-    [UIConfigure setSkipButtonTitle:@"跳过"];
-    [UIConfigure setUpdateButtonTitle:@"立即更新"];
-    [UIConfigure setLaterButtonTitle:@"稍后"];
-    [UIConfigure setVersionText:@"版本 %@"];
-    [UIConfigure setReleaseNotesText:@"更新说明:"];
+    [UIConfigure setSkipButtonTitle:@"Skip"];
+    [UIConfigure setUpdateButtonTitle:@"Update"];
+    [UIConfigure setLaterButtonTitle:@"Later"];
+    [UIConfigure setVersionText:@"Version %@"];
+    [UIConfigure setReleaseNotesText:@"Release Notes:"];
     [[MacUpdateManager sharedManager] customize:UIConfigure withCheck4UpdatesURL:@"https://xxxxx.com/php/update/check-for-updates.php"];
     
     BOOL bRslt = [[MacUpdateManager sharedManager] checkAppUpdate:appObj];
